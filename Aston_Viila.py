@@ -1,18 +1,3 @@
-# Install Python 3.11 if needed
-pyenv install 3.11.8
-
-# Set local version
-pyenv local 3.11.8
-
-# Create a clean environment
-python -m venv venv
-source venv/bin/activate
-
-# Install your dashboard dependencies
-pip install streamlit pandas plotly
-
-streamlit run app.py
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
